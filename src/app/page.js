@@ -1,8 +1,17 @@
+import HeroSlider from "@/components/HeroSlider";
+import FeaturedStudios from "@/components/FeaturedStudios";
+import Categories from "@/components/Categories";
+import HowItWorks from "@/components/HowItWorks";
+import HostGuarantee from "@/components/HostGuarantee";
+
 export default function Home() {
   return (
-    <div className="max-w-7xl mx-auto px-4 py-20 text-center">
-      <h1 className="section-title">StudioSpace is running</h1>
-      <p className="section-sub mx-auto">Home page comes in Step 4.</p>
-    </div>
+    <>
+      <HeroSlider />
+      <FeaturedStudios />
+      <Categories />
+      <HowItWorks />
+      <HostGuarantee />
+    </>
   );
 }
