@@ -1,17 +1,8 @@
-/** @type {import('next').NextConfig} */
+const API = process.env.API_URL || "http://localhost:5000";
+
 const nextConfig = {
-  /* config options here */
-  cacheComponents: true,
-  partialPrefetching: true,
-  reactCompiler: true,
-  turbopack: {
-    rules: {
-      "*.css": {
-        loaders: ["@tailwindcss/turbopack"],
-        as: "*.css",
-      },
-    },
+  async rewrites() {
+    return [{ source: "/api/:path*", destination: `${API}/api/:path*` }];
   },
 };
-
 export default nextConfig;
