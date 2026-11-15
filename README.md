@@ -2,7 +2,7 @@
 
 Peer-to-peer marketplace for booking creative studios: photo studios, sound stages, podcast rooms, music suites and art workshops.
 
-**Live site:** https://studiospace-rdjhunwkd-jannatulhritu57-9695.vercel.app/
+**Live site:** https://studiospace-black-ten.vercel.app
 **Server repo:** https://github.com/jferdous222318/studiospace
 
 ## Features
