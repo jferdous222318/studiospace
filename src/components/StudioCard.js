@@ -1,6 +1,8 @@
+"use client";
 import Link from "next/link";
 import { FaStar } from "react-icons/fa6";
 import { FiMapPin } from "react-icons/fi";
+import { onImgError } from "@/lib/constants";
 
 export default function StudioCard({ studio }) {
   const rating = Number(studio.rating) || 0;
@@ -9,7 +11,7 @@ export default function StudioCard({ studio }) {
     <div className="card bg-base-100 border border-base-300 shadow-sm hover:shadow-lg hover:-translate-y-1 transition h-full">
       <figure className="relative aspect-[4/3] w-full bg-base-300">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={studio.image} alt={studio.title} className="h-full w-full object-cover" loading="lazy" />
+        <img src={studio.image} alt={studio.title} onError={onImgError} className="h-full w-full object-cover" loading="lazy" />
         <span className="badge badge-primary absolute top-3 left-3 font-medium">{studio.category}</span>
         <span className="badge bg-base-100/90 border-0 absolute top-3 right-3 gap-1 font-semibold">
           <FaStar className="text-amber-500" />

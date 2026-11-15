@@ -1,4 +1,5 @@
 "use client";
+import { onImgError } from "@/lib/constants";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import toast from "react-hot-toast";
@@ -71,7 +72,7 @@ function MyListings() {
                   <td>
                     <div className="flex items-center gap-3 min-w-56">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={s.image} alt={s.title} className="size-14 rounded-lg object-cover shrink-0" />
+                      <img src={s.image} alt={s.title} onError={onImgError} className="size-14 rounded-lg object-cover shrink-0" />
                       <div>
                         <Link href={`/studios/${s._id}`} className="font-bold hover:text-primary">{s.title}</Link>
                         <p className="text-xs opacity-70">{s.location}</p>

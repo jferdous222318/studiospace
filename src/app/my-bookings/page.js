@@ -9,7 +9,7 @@ import StatusBadge from "@/components/StatusBadge";
 import Modal from "@/components/Modal";
 import Loader from "@/components/Loader";
 
-export const fmtDate = (d) =>
+const fmtDate = (d) =>
   new Date(`${d}T00:00:00`).toLocaleDateString("en-US", { weekday: "short", day: "numeric", month: "short", year: "numeric" });
 
 function MyBookings() {

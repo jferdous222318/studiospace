@@ -1,4 +1,5 @@
 "use client";
+import { onImgError } from "@/lib/constants";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
@@ -70,7 +71,7 @@ export default function StudioDetailsPage() {
             {images.map((src, i) => (
               <SwiperSlide key={i}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={src} alt={`${studio.title} photo ${i + 1}`} className="h-full w-full object-cover" />
+                <img src={src} alt={`${studio.title} photo ${i + 1}`} onError={onImgError} className="h-full w-full object-cover" />
               </SwiperSlide>
             ))}
           </Swiper>
