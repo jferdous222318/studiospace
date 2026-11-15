@@ -75,7 +75,9 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-base-300 py-4 text-center text-xs opacity-70 px-4">
-        © {new Date().getFullYear()} StudioSpace. All rights reserved. By using this site you agree to our Terms of Service and Privacy Policy.
+        © {new Date().getFullYear()} StudioSpace. All rights reserved. By using this site you agree to our{" "}
+        <Link href="/terms" className="link">Terms of Service</Link> and{" "}
+        <Link href="/privacy" className="link">Privacy Policy</Link>.
       </div>
     </footer>
   );

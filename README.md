@@ -2,7 +2,7 @@
 
 Peer-to-peer marketplace for booking creative studios: photo studios, sound stages, podcast rooms, music suites and art workshops.
 
-**Live site:** https://YOUR-APP.vercel.app
+**Live site:** https://studiospace-rdjhunwkd-jannatulhritu57-9695.vercel.app/
 **Server repo:** https://github.com/jferdous222318/studiospace
 
 ## Features
@@ -18,8 +18,9 @@ Peer-to-peer marketplace for booking creative studios: photo studios, sound stag
 Next.js (App Router), Tailwind CSS, daisyUI, Swiper, React Hot Toast, Express.js, MongoDB, JWT, bcrypt
 
 ## Examiner Test Credentials
-- Email: examiner@studiospace.com
+- Email: examiner2@studiospace.com
 - Password: Studio123
+
 
 ## Local Setup
 1. Clone both repos
